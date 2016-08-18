@@ -1,7 +1,7 @@
 # dotjot
 A framework for building custom registration forms
 
-## Mission 1 | Establish a NGO Registration Portal
+## Mission 1 | Establish a Partner Registration Portal
 
 ### Definitions
 
@@ -9,8 +9,8 @@ A framework for building custom registration forms
 
 ### Objective
 
-1. A mechanism to register new NGOs for the Serve Out Smiles program
-2. A portal to keep a track of the NGO timetable(s)
+1. A mechanism to register new Partners
+2. A portal to keep a track of the Partner's timetable(s)
 
 ### Specific Requirements
 
@@ -18,15 +18,15 @@ A framework for building custom registration forms
 1.
 
 #### Logical database requirement
-1. NGO
-  -*NGO_id*
+1. Partner
+  - *Partner_id*
   - Name
   - Contact
   - Email
   - Coordinator name
   - Location
   - Address
-  - Specializatiob of NGO
+  - Specialization
   - Number of seats
   - Working days
   - Time slots
