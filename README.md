@@ -30,6 +30,7 @@ A framework for building custom registration forms
   - Number of seats
   - Working days
   - Time slots
+  - Seats per slot
   - Remark
 
 
@@ -80,6 +81,7 @@ A framework for building custom registration forms
 ### Objectives
 
 1. A portal for members to connect with the Organization and it's Partner(s)
+2. Second step in the Registration process
 
 ### Specific requirements
 
@@ -94,17 +96,111 @@ A framework for building custom registration forms
   - Days of visit
   - Time slots available
 
-2. Public (after selection)
-    - Batch, course, stream, SAP ID
+2. Private (after selection)
+    - SAP ID/ UUID
     - Duration served
     - Partner name
-    - Remarks
-    - Rating
 
 #### Logical database requirement
 
 1. Members
-    - *SAP ID*
+    - *SAP ID / UUID*
     - Partner name
     - Time slots
     - Days of visit
+
+
+## Mission 4 | Establish a Payment update Portal
+
+### Definitions
+
+1. *Bold* text in _Logical database requirement_ indicates *primary key*
+
+### Objective
+
+1. A mechanism for Client to keep a track of payments and update the database
+2. Third step to complete the Registration process
+
+### Specific Requirements
+
+#### External Interface Requirements
+
+1. Public:
+  - UUID/ SAP ID
+  - Payment confirmation
+
+#### Logical database requirement
+1. Member
+      - *UUID / SAP ID*
+      - Payment confirmation
+
+
+## Mission 5 | Establish a Coordinator Interface
+
+### Definitions
+
+1. *Bold* text in _Logical database requirement_ indicates *primary key*
+
+### Objective
+
+1. A mechanism for the Coordinator to update the Curriculum
+2. Acts as a base for the members
+3. A step involved throughout the Duration of the programme
+
+### Specific Requirements
+
+#### External Interface Requirements
+
+1. Public(Coordinator POV):
+  - Partner_id
+  - Time slot
+  - Medium to input the Curriculum
+
+2. Public(Member POV):
+  - (Fancy) Curriculum
+  - Guidelines (if any)
+
+#### Logical database requirement
+1. Partner
+      - *Partner_id*
+      - Curriculum
+
+
+## Mission 6 | Establish a View of Committed Member(s)
+
+### Definitions
+
+1. *Bold* text in _Logical database requirement_ indicates *primary key*
+
+### Objective
+
+1. A mechanism for the Coordinators to view the list of members who have completed the programme
+2. Acts as a base for the Coordinators
+3. The final step on completion of the programme
+
+### Specific Requirements
+
+#### External Interface Requirements
+
+1. Public:
+  - First name
+  - Last name
+  - Year
+  - Course
+  - Stream
+
+#### Logical database requirement
+1. Already existing 'Member' database
+  - *UUID / SAP ID*
+  - First name
+  - Last name
+  - Year
+  - Course
+  - Stream
+  - Partner
+  - Time slot
+  - Days of visit
+  - Duration
+
+
+## Mission 7 | Establish an attendance mechanism
