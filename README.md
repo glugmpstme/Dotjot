@@ -6,13 +6,16 @@ JotDot aims to be a modular system of making forms
 
 ### Purpose
 1. Going paper free
-1. Bookkeeping
+2. Error reduction
+3. Maintain transperancy
+4. Bookkeeping
   - Data warehousing
   - Mining for requirements
-1. Coordination
+5. Coordination
   - Curriculum
   - Notifications
-1. Attendance tracking
+6. Attendance tracking
+7. Saves time
 
 ### Definitions
 1. **Bold** text in *Logical database requirement* indicates primary key
