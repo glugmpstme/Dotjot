@@ -2,12 +2,29 @@
 A framework for building custom registration forms
 
 ## Introduction
+JotDot aims to be a modular system of making forms
+
 ### Purpose
+1. Going paper free
+1. Bookkeeping
+  - Data warehousing
+  - Mining for requirements
+1. Coordination
+  - Curriculum
+  - Notifications
+1. Attendance tracking
+
 ### Definitions
+1. **Bold** text in *Logical database requirement* indicates primary key
+
 ### System overview
 ## Overall description
 ### Product perspective
 #### User Interfaces
+1. Web portal for partners
+2. Web portal for students
+3. Web portal for administrators
+
 #### Hardware interfaces
 #### Software interfaces
 #### Communication Interfaces
@@ -32,21 +49,10 @@ A framework for building custom registration forms
 #### Others
 
 
-## Mission 1 | Establish a Partner Registration Portal
-
-### Definitions
-
-1. *Bold* text in _Logical database requirement_ indicates *primary key*
-
 ### Objective
 
 1. A mechanism to register new Partners
 2. A portal to keep a track of the Partner's timetable(s)
-
-### Specific Requirements
-
-#### External Interface Requirements
-1.
 
 #### Logical database requirement
 1. Partner
