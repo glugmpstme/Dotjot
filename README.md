@@ -43,6 +43,44 @@ JotDot aims to be a modular system of making forms
 ### Functional requirements
 ### Performance requirements
 ### Logical database requirement
+
+Member Data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*MemberID* | Integer |
+First name | String |
+Last name | String |
+Date of birth | Date |
+Sex | Character |
+Batch | Integer |
+SAP ID | Integer |
+Division | Character |
+Year | Integer |
+Course | String |
+Stream | String |
+Email | Alpha-numeric |
+Phone | Integer |
+Address | Alpha-numeric |
+
+Partner Data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*Partner_id* | Integer |
+Name | Character |
+Contact | Integer |
+Email | Alpha-numeric |
+Coordinator name | String |
+Location | String |
+Address | Alpha-numeric |
+Specialization | String |
+Number of seats | Integer |
+Working days | String |
+Time slots | Time |
+Seats per slot | Integer |
+Remark |String |
+
 ### Software System attributes
 #### Reliability
 #### Availability
