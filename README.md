@@ -6,13 +6,16 @@ JotDot aims to be a modular system of making forms
 
 ### Purpose
 1. Going paper free
-1. Bookkeeping
+2. Error reduction
+3. Maintain transperancy
+4. Bookkeeping
   - Data warehousing
   - Mining for requirements
-1. Coordination
+5. Coordination
   - Curriculum
   - Notifications
-1. Attendance tracking
+6. Attendance tracking
+7. Saves time
 
 ### Definitions
 1. **Bold** text in *Logical database requirement* indicates primary key
@@ -39,6 +42,44 @@ JotDot aims to be a modular system of making forms
 ### Functional requirements
 ### Performance requirements
 ### Logical database requirement
+
+Member Data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*MemberID* | Integer |
+First name | String |
+Last name | String |
+Date of birth | Date |
+Sex | Character |
+Batch | Integer |
+SAP ID | Integer |
+Division | Character |
+Year | Integer |
+Course | String |
+Stream | String |
+Email | Alpha-numeric |
+Phone | Integer |
+Address | Alpha-numeric |
+
+Partner Data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*Partner_id* | Integer |
+Name | Character |
+Contact | Integer |
+Email | Alpha-numeric |
+Coordinator name | String |
+Location | String |
+Address | Alpha-numeric |
+Specialization | String |
+Number of seats | Integer |
+Working days | String |
+Time slots | Time |
+Seats per slot | Integer |
+Remark |String |
+
 ### Software System attributes
 #### Reliability
 #### Availability
