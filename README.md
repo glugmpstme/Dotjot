@@ -15,7 +15,7 @@ JotDot aims to be a modular system of making forms
   - Curriculum
   - Notifications
 6. Attendance tracking
-7. Saves time
+7. Time saving
 
 ### Definitions
 1. **Bold** text in *Logical database requirement* indicates primary key
@@ -61,6 +61,7 @@ Stream | String |
 Email | Alpha-numeric |
 Phone | Integer |
 Address | Alpha-numeric |
+*UUID* | Integer |
 
 Partner Data entity:
 
@@ -79,6 +80,29 @@ Working days | String |
 Time slots | Time |
 Seats per slot | Integer |
 Remark | String |
+
+NGO-selection Data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*UUID* | Integer | Member's Unique identifier
+Partner name | String | Name of the Partner
+Time slots | Time | Service time slots
+Days of visit | String | Service Days
+
+Payment-confirmation Data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*UUID*  | Integer | Member's Unique identifier
+Payment-confirmation | Binary |
+
+Curriculum data entity:
+
+Data Item | Type | Description
+--- | --- | ---
+*Partner_id* | Integer | Partner's Unique identifier
+Curriculum | nVarchar | Stores Curriculum
 
 ### Software System attributes
 #### Reliability
