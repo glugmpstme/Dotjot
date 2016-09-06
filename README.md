@@ -25,7 +25,6 @@ JotDot aims to be a modular system of making forms
 2. Web portal for students
 3. Web portal for administrators
 
-#### Hardware interfaces
 #### Software interfaces
 #### Communication Interfaces
 #### Memory Constraints
