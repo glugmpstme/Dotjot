@@ -36,6 +36,13 @@ JotDot aims to be a modular system of making forms
 #### Site Adaptation Requirements
 ### Product functions
 ### User characteristics
+
+| User | Characteristics |
+| --- | --- |
+| Member | <ul><li>Ability to read and comprehend English</li><li>Possess a device to access the service</li></ul> |
+| Partner | <ul><li>Ability to read and understand English.</li><li>Familiarity with the operation of the basic Graphical User Interface (GUI).</li><li>Possess a device to access the service</li></ul> |
+| Coordinator | <ul><li>Rudimentary understanding of modelling techniques.</li><li>Possess a device to access the service</li></ul> |
+
 ### Constraints, assumptions and dependencies
 ## Specific requirements
 ### External interface requirements
@@ -112,7 +119,7 @@ Curriculum | nVarchar | Stores Curriculum
 #### Portability
 #### Others
 
-
+-------------------------------
 ### Objective
 
 1. A mechanism to register new Partners
