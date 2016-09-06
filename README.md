@@ -28,7 +28,6 @@ JotDot aims to be a modular system of making forms
 2. Web portal for students
 3. Web portal for administrators
 
-#### Hardware interfaces
 #### Software interfaces
 #### Communication Interfaces
 #### Memory Constraints
@@ -79,7 +78,7 @@ Number of seats | Integer |
 Working days | String |
 Time slots | Time |
 Seats per slot | Integer |
-Remark |String |
+Remark | String |
 
 ### Software System attributes
 #### Reliability
