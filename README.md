@@ -47,7 +47,7 @@ JotDot aims to be a modular system of making forms
 
 1. All the users have access to a desktop/laptop/mobile device to access the service.
 2. All users have an internet connection.
-3. 
+3.
 
 ## Specific requirements
 ### External interface requirements
@@ -59,7 +59,7 @@ Member Data entity:
 
 Data Item | Type | Description
 --- | --- | ---
-*MemberID* | Integer |
+**UUID** | Integer |
 First name | String |
 Last name | String |
 Date of birth | Date |
@@ -73,13 +73,13 @@ Stream | String |
 Email | Alpha-numeric |
 Phone | Integer |
 Address | Alpha-numeric |
-*UUID* | Integer |
+
 
 Partner Data entity:
 
 Data Item | Type | Description
 --- | --- | ---
-*Partner_id* | Integer |
+**Partner_id** | Integer |
 Name | Character |
 Contact | Integer |
 Email | Alpha-numeric |
@@ -97,7 +97,7 @@ NGO-selection Data entity:
 
 Data Item | Type | Description
 --- | --- | ---
-*UUID* | Integer | Member's Unique identifier
+**UUID** | Integer | Member's Unique identifier
 Partner name | String | Name of the Partner
 Time slots | Time | Service time slots
 Days of visit | String | Service Days
@@ -106,14 +106,14 @@ Payment-confirmation Data entity:
 
 Data Item | Type | Description
 --- | --- | ---
-*UUID*  | Integer | Member's Unique identifier
+**UUID**  | Integer | Member's Unique identifier
 Payment-confirmation | Binary |
 
 Curriculum data entity:
 
 Data Item | Type | Description
 --- | --- | ---
-*Partner_id* | Integer | Partner's Unique identifier
+**Partner_id** | Integer | Partner's Unique identifier
 Curriculum | nVarchar | Stores Curriculum
 
 ### Software System attributes
