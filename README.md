@@ -39,11 +39,16 @@ JotDot aims to be a modular system of making forms
 
 | User | Characteristics |
 | --- | --- |
-| Member | <ul><li>Ability to read and comprehend English</li><li>Possess a device to access the service</li></ul> |
-| Partner | <ul><li>Ability to read and understand English.</li><li>Familiarity with the operation of the basic Graphical User Interface (GUI).</li><li>Possess a device to access the service</li></ul> |
-| Coordinator | <ul><li>Rudimentary understanding of modelling techniques.</li><li>Possess a device to access the service</li></ul> |
+| Member | <ul><li>Ability to read and comprehend English</li><li>Possess a device to access the service</li><li>Predominantly interact with the service through Mobile device</li><li>Usage frequency is medium</li></ul> |
+| Partner | <ul><li>Ability to read, understand and write English.</li><li>Familiarity with the operation of the basic Graphical User Interface (GUI).</li><li>Do not have a high technical enterprise</li><li>Possess a device to access the service</li><li>Usage frequency is low</li></ul> |
+| Coordinator | <ul><li>Rudimentary understanding of modelling techniques.</li><li>Possess a device to access the service</li><li>Access to Database</li><li>Usage frequency is high</li><li>Predominantly interact with the service through a desktop</li></ul> |
 
 ### Constraints, assumptions and dependencies
+
+1. All the users have access to a desktop/laptop/mobile device to access the service.
+2. All users have an internet connection.
+3. 
+
 ## Specific requirements
 ### External interface requirements
 ### Functional requirements
