@@ -21,15 +21,40 @@ JotDot aims to be a modular system of making forms
 1. **Bold** text in *Logical database requirement* indicates primary key
 
 ### System overview
+
 ## Overall description
 ### Product perspective
+
+The service, once deployed, will only have a web interface. This website will be utilized for execution of the provided functionalities.
+From the member point of view, he/she will be able to register for the service through the website and also view the curriculum for the registered services.
+
 #### User Interfaces
 1. Web portal for partners
 2. Web portal for students
 3. Web portal for administrators
 
 #### Software interfaces
+
+Client on Internet:
+  Browser, Operating System(any)
+
+Client on Intranet:
+  Browser, Operating System(any)
+
+Database Server:
+  PostgreSQL, Operating System(any)
+
+Web Server:
+
+
+Development end:
+  Agile development (Django,Python,SQL,PyCharm), OS(Linux)
+
 #### Communication Interfaces
+
+[] Protocol used by user
+[] Protocol used by admin
+
 #### Memory Constraints
 ### Design constraints
 #### Operations
@@ -47,7 +72,8 @@ JotDot aims to be a modular system of making forms
 
 1. All the users have access to a desktop/laptop/mobile device to access the service.
 2. All users have an internet connection.
-3.
+3. GUI is only in English.
+4. Only registered coordinators have access to the service.
 
 ## Specific requirements
 ### External interface requirements
