@@ -2,7 +2,21 @@ from django.db import models
 
 
 # Create your models here.
-class PartnerDetails(models.Model):
+
+class Partner(models.Model):
+    pid = models.AutoField(primary_key=True)
+    partner = models.CharField("Name :", max_length=30)
+    contact = models.IntegerField("Contact No. :")
+    email = models.EmailField("Email id :")
+    coordinatorName = models.CharField("Coordinator :", max_length=30)
+    location = models.CharField("Location:", max_length=10)
+    address = models.CharField("Address :", max_length=160)
+    spl = models.CharField("Specializations :", max_length=30)
+    SoS = models.IntegerField("Seats per slot :")
+    remark = models.TextField("Remark :")
+
+
+class WorkingDay(models.Model):
     WORKING_DAYS = (
         ('Su', 'Sunday'),
         ('M', 'Monday'),
@@ -12,15 +26,13 @@ class PartnerDetails(models.Model):
         ('F', 'Friday'),
         ('S', 'Saturday'),
     )
-    name = models.CharField("Name :", max_length=30)
-    contact = models.IntegerField("Contact No. :")
-    email = models.EmailField("Email id :")
-    cname = models.CharField("Coordinator :", max_length=30)
-    location = models.CharField("Location:")
-    address = models.CharField("Address :")
-    spl = models.CharField("Specializations :")
-    NoOfSeats = models.IntegerField("Number of Seats :")
-    WorkingDays = models.CharField(max_length=2, choices=WORKING_DAYS)  # yet to complete
+    partner = models.ForeignKey(Partner)  # Each partner has multiple working days
+    workingDay = models.CharField(max_length=2, choices=WORKING_DAYS)
+
+
+class TimeSlots(models.Model):
+    time = models.ForeignKey(WorkingDay)  # Each working day has multiple time slots
+    timeSlots = models.TimeField()
 
 
 class MemberDetails(models.Model):
@@ -48,15 +60,36 @@ class MemberDetails(models.Model):
         ('Mechanical', 'Mechanical'),
     )
     UUID = models.IntegerField(primary_key=True)
-    fname = models.CharField("First Name :", max_length=20)
-    lname = models.CharField("Last Name :", max_length=20)
+    firstName = models.CharField("First Name :", max_length=20)
+    lastName = models.CharField("Last Name :", max_length=20)
     dob = models.DateField("Date of birth :")
     gender = models.CharField("Gender :", max_length=1, choices=GENDER)
-    Sap = models.IntegerField("SAP id :", max_length=11)
+    Sap = models.IntegerField("SAP id :")
     email = models.EmailField("Email id :")
-    phone = models.IntegerField("Phone Number :", max_length=10)
+    phone = models.IntegerField("Phone Number :")
     division = models.CharField("Division :", max_length=1)
     year = models.IntegerField("Year :", choices=YEAR)
-    course = models.CharField("Course :", choices=COURSE)
-    stream = models.CharField("Stream :", choices=STREAM)
+    course = models.CharField("Course :", choices=COURSE, max_length=10)
+    stream = models.CharField("Stream :", choices=STREAM, max_length=10)
 
+
+class PaymentConfirmation(models.Model):
+    PAYMENT = (
+        ('Y', 'Yes'),
+        ('N', 'No')
+    )
+    member = models.ForeignKey(MemberDetails)
+    payment = models.CharField(max_length=1, choices=PAYMENT)
+
+
+class Curriculum(models.Model):
+    partner = models.ForeignKey(Partner)
+    curriculum = models.TextField("Curriculum :")
+
+
+'''class SelectPartner(models.Model):
+    member = models.ForeignKey(MemberDetails)
+    partner = models.ForeignKey(PartnerDetails)
+    day = models.ForeignKey(WorkingDay)
+    time = models.ForeignKey(TimeSlots)
+'''
